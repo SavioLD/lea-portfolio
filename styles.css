@@ -238,6 +238,13 @@ h1, h2, h3 { line-height: .98; font-weight: 900; letter-spacing: -.02em; }
 .g4 { grid-column: span 4; }  .g4 .img-ph { aspect-ratio: 3/4; }
 .g5 { grid-column: span 4; }  .g5 .img-ph { aspect-ratio: 3/4; }
 
+/* -------------------- Was ich teile (Content-Mix) -------------------- */
+.shares-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.share { display: flex; flex-direction: column; }
+.share img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 18px; box-shadow: var(--shadow-sm); display: block; }
+.share .lbl { margin-top: 14px; font-weight: 900; font-size: 1.05rem; text-transform: uppercase; letter-spacing: .04em; display: flex; align-items: center; gap: 9px; }
+.share .lbl::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex: none; }
+
 /* -------------------- Pakete -------------------- */
 .services { background: var(--bg-2); }
 .packages { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; align-items: stretch; margin-top: 24px; }
@@ -342,6 +349,7 @@ h1, h2, h3 { line-height: .98; font-weight: 900; letter-spacing: -.02em; }
   .stat:nth-child(-n+2) { border-bottom: 1px solid rgba(253,238,233,.25); }
   .packages { grid-template-columns: 1fr; max-width: 440px; margin-inline: auto; }
   .gallery > div { grid-column: span 6 !important; }
+  .shares-grid { grid-template-columns: repeat(2, 1fr); }
   .pillar, .step { grid-template-columns: 60px 1fr; }
   .pillar p, .step p { grid-column: 1 / -1; }
   .aud-grid { grid-template-columns: 1fr; gap: 44px; }
