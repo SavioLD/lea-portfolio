@@ -127,6 +127,16 @@ h1, h2, h3 { line-height: .98; font-weight: 900; letter-spacing: -.02em; }
 }
 .nav-links a { font-size: .74rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--brand); padding: 8px 16px; border-radius: var(--r-pill); transition: background .2s, color .2s; }
 .nav-links a:hover, .nav-links a.active { background: var(--brand); color: var(--bg); }
+.nav-right { display: flex; align-items: center; gap: 12px; }
+.lang-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: var(--paper); border: 2px solid var(--brand); color: var(--brand);
+  padding: 9px 15px; border-radius: var(--r-pill); box-shadow: var(--pill-shadow);
+  font-family: var(--sans); font-weight: 800; font-size: .72rem; letter-spacing: .08em; cursor: pointer;
+}
+.lang-btn .sep { opacity: .35; }
+.lang-btn span:not(.sep) { opacity: .35; transition: opacity .2s; }
+.lang-btn span.active { opacity: 1; }
 .nav-toggle { display: none; background: var(--brand); color: var(--bg); border: 0; width: 46px; height: 46px; border-radius: 50%; font-size: 1.3rem; cursor: pointer; box-shadow: var(--pill-shadow); }
 
 /* -------------------- Hero -------------------- */

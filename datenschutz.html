@@ -16,31 +16,36 @@
   <header class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="brand">Lea</a>
-      <nav class="nav-links">
-        <a href="index.html#ueber-mich">Über mich</a>
-        <a href="index.html#leistungen">Marken</a>
-        <a href="index.html#kontakt">Kontakt</a>
-      </nav>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html#ueber-mich" data-i18n="nav_about">Über mich</a>
+          <a href="index.html#leistungen" data-i18n="nav_brands">Marken</a>
+          <a href="index.html#kontakt" data-i18n="nav_contact">Kontakt</a>
+        </nav>
+        <button class="lang-btn" id="langBtn" type="button" aria-label="Sprache wechseln / Switch language">
+          <span class="l-de">DE</span><span class="sep">/</span><span class="l-en">EN</span>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- ============ INHALT ============ -->
   <main class="legal">
     <div class="container">
-      <a href="index.html" class="back">← Zurück zur Startseite</a>
-      <h1>Datenschutzerklärung</h1>
-      <p class="updated">Stand: <span class="ph">[Datum eintragen]</span></p>
+      <a href="index.html" class="back" data-i18n="back">← Zurück zur Startseite</a>
+      <h1 data-i18n="h1">Datenschutzerklärung</h1>
+      <p class="updated" data-i18n="updated">Stand: <span class="ph">[Datum eintragen]</span></p>
 
-      <h2>1. Datenschutz auf einen Blick</h2>
-      <p>
+      <h2 data-i18n="s1_h">1. Datenschutz auf einen Blick</h2>
+      <p data-i18n="s1_p">
         Diese Website verwendet bewusst <strong>keine Analyse-, Tracking- oder Marketingtools</strong>
         und setzt <strong>keine nicht notwendigen Cookies</strong>. Es findet keine Reichweitenmessung
         und kein Nutzer-Tracking statt. Personenbezogene Daten werden nur verarbeitet, wenn du
         selbst Kontakt aufnimmst (z. B. per E-Mail).
       </p>
 
-      <h2>2. Verantwortliche Stelle</h2>
-      <p>
+      <h2 data-i18n="s2_h">2. Verantwortliche Stelle</h2>
+      <p data-i18n="s2_p">
         Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br />
         <span class="ph">[Vorname Nachname]</span><br />
         <span class="ph">[Straße und Hausnummer]</span><br />
@@ -48,38 +53,40 @@
         E-Mail: <span class="ph">lea.loc@gmx.de</span>
       </p>
 
-      <h2>3. Hosting</h2>
-      <p>
+      <h2 data-i18n="s3_h">3. Hosting</h2>
+      <p data-i18n="s3_p1">
         Diese Website wird bei folgendem Anbieter gehostet:
         <span class="ph">[Name und Anschrift des Hosting-Anbieters, z. B. GitHub Pages / Netlify / …]</span>.
       </p>
-      <p>
+      <p data-i18n="s3_p2">
         Beim Aufruf der Website werden durch den Hosting-Anbieter technisch notwendige Daten in
         sogenannten Server-Logfiles verarbeitet, die dein Browser automatisch übermittelt. Dazu
         gehören in der Regel:
       </p>
-      <ul>
+      <ul data-i18n="s3_list">
         <li>IP-Adresse des zugreifenden Geräts</li>
         <li>Datum und Uhrzeit des Zugriffs</li>
         <li>aufgerufene Seite / Datei</li>
         <li>verwendeter Browser und Betriebssystem</li>
         <li>Referrer-URL</li>
       </ul>
-      <p>
+      <p data-i18n="s3_p3">
         Die Verarbeitung erfolgt zur Gewährleistung eines sicheren und stabilen Betriebs der
         Website auf Grundlage unseres berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO).
         [PLATZHALTER: ggf. Auftragsverarbeitungsvertrag mit dem Hoster ergänzen.]
       </p>
 
-      <h2>4. Cookies</h2>
-      <p>
+      <h2 data-i18n="s4_h">4. Cookies</h2>
+      <p data-i18n="s4_p">
         Diese Website setzt <strong>keine nicht notwendigen Cookies</strong> und verwendet keine
-        Cookies zu Analyse- oder Marketingzwecken. [PLATZHALTER: Sollte künftig ein technisch
+        Cookies zu Analyse- oder Marketingzwecken. Für deine Sprachauswahl (DE/EN) wird lediglich ein
+        technisch notwendiger Eintrag im lokalen Speicher deines Browsers (localStorage) gesetzt – das
+        ist kein Cookie und wird nicht an Dritte übertragen. [PLATZHALTER: Sollte künftig ein technisch
         notwendiges Cookie eingesetzt werden, hier ergänzen.]
       </p>
 
-      <h2>5. Kontaktaufnahme per E-Mail</h2>
-      <p>
+      <h2 data-i18n="s5_h">5. Kontaktaufnahme per E-Mail</h2>
+      <p data-i18n="s5_p">
         Wenn du uns per E-Mail kontaktierst, werden deine Angaben (z. B. Name, E-Mail-Adresse,
         Nachrichteninhalt) zur Bearbeitung deiner Anfrage gespeichert und verwendet. Rechtsgrundlage
         ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung/Erfüllung eines Vertrags) bzw. lit. f DSGVO
@@ -87,8 +94,8 @@
         sie nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
       </p>
 
-      <h2>6. Verlinkte Social-Media-Profile</h2>
-      <p>
+      <h2 data-i18n="s6_h">6. Verlinkte Social-Media-Profile</h2>
+      <p data-i18n="s6_p">
         Diese Website verlinkt auf externe Social-Media-Profile (z. B. Instagram, TikTok
         <span class="ph">[weitere Kanäle ergänzen]</span>). Beim Klick auf einen solchen Link
         wirst du auf die Seite des jeweiligen Anbieters weitergeleitet. Auf die dortige
@@ -96,17 +103,17 @@
         jeweiligen Anbieters. [PLATZHALTER: ggf. Anbieter und Datenschutz-Links ergänzen.]
       </p>
 
-      <h2>7. Externe Schriftarten (Google Fonts)</h2>
-      <p>
+      <h2 data-i18n="s7_h">7. Externe Schriftarten (Google Fonts)</h2>
+      <p data-i18n="s7_p">
         [PLATZHALTER – bitte prüfen: Diese Website bindet aktuell Schriftarten über Google Fonts
         ein. Dabei kann eine Verbindung zu Servern von Google hergestellt und deine IP-Adresse
         übertragen werden. Wenn du dies vermeiden möchtest, können die Schriften lokal eingebunden
         werden. Bitte an die tatsächliche technische Umsetzung anpassen.]
       </p>
 
-      <h2>8. Deine Rechte</h2>
-      <p>Du hast im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf:</p>
-      <ul>
+      <h2 data-i18n="s8_h">8. Deine Rechte</h2>
+      <p data-i18n="s8_p1">Du hast im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf:</p>
+      <ul data-i18n="s8_list">
         <li>Auskunft über deine gespeicherten personenbezogenen Daten (Art. 15 DSGVO)</li>
         <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
         <li>Löschung (Art. 17 DSGVO)</li>
@@ -114,18 +121,18 @@
         <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
         <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
       </ul>
-      <p>
+      <p data-i18n="s8_p2">
         Zudem hast du ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde
         (Art. 77 DSGVO). [PLATZHALTER: ggf. zuständige Aufsichtsbehörde ergänzen.]
       </p>
 
-      <h2>9. SSL-/TLS-Verschlüsselung</h2>
-      <p>
+      <h2 data-i18n="s9_h">9. SSL-/TLS-Verschlüsselung</h2>
+      <p data-i18n="s9_p">
         Diese Website nutzt aus Sicherheitsgründen eine SSL-/TLS-Verschlüsselung. Eine
         verschlüsselte Verbindung erkennst du am „https://" in der Adresszeile deines Browsers.
       </p>
 
-      <p style="margin-top:40px; font-size:.86rem; color:var(--muted);">
+      <p style="margin-top:40px; font-size:.86rem; color:var(--muted);" data-i18n="note">
         Hinweis: Dies ist eine Platzhalter-Datenschutzerklärung als Rohgerüst. Bitte alle Angaben
         ergänzen und vor Veröffentlichung rechtlich prüfen lassen.
       </p>
@@ -140,11 +147,63 @@
           <a href="impressum.html">Impressum</a>
           <a href="datenschutz.html">Datenschutz</a>
         </div>
-        <small>© <span id="year">2026</span> Lea. Alle Rechte vorbehalten.</small>
+        <small>© <span id="year">2026</span> Lea. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></small>
       </div>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const EN = {
+      nav_about: "About", nav_brands: "Brands", nav_contact: "Contact",
+      back: "← Back to homepage",
+      h1: "Privacy Policy",
+      updated: "Last updated: <span class=\"ph\">[enter date]</span>",
+      s1_h: "1. Data protection at a glance",
+      s1_p: "This website deliberately uses <strong>no analytics, tracking or marketing tools</strong> and sets <strong>no non-essential cookies</strong>. There is no reach measurement and no user tracking. Personal data is only processed if you contact us yourself (e.g. by email).",
+      s2_h: "2. Controller",
+      s2_p: "The controller for data processing on this website is:<br /><span class=\"ph\">[Full name]</span><br /><span class=\"ph\">[Street and number]</span><br /><span class=\"ph\">[ZIP code, city]</span><br />Email: <span class=\"ph\">lea.loc@gmx.de</span>",
+      s3_h: "3. Hosting",
+      s3_p1: "This website is hosted by the following provider: <span class=\"ph\">[Name and address of the hosting provider, e.g. GitHub Pages / Netlify / …]</span>.",
+      s3_p2: "When you access the website, the hosting provider processes technically necessary data in so-called server log files, which your browser transmits automatically. These usually include:",
+      s3_list: "<li>IP address of the accessing device</li><li>date and time of access</li><li>page / file accessed</li><li>browser and operating system used</li><li>referrer URL</li>",
+      s3_p3: "Processing takes place to ensure secure and stable operation of the website on the basis of our legitimate interest (Art. 6 (1) (f) GDPR). [PLACEHOLDER: add a data processing agreement with the host if applicable.]",
+      s4_h: "4. Cookies",
+      s4_p: "This website sets <strong>no non-essential cookies</strong> and does not use cookies for analytics or marketing purposes. For your language selection (DE/EN), only a technically necessary entry is stored in your browser's local storage (localStorage) – this is not a cookie and is not transmitted to third parties. [PLACEHOLDER: If a technically necessary cookie is used in the future, add it here.]",
+      s5_h: "5. Contact by email",
+      s5_p: "If you contact us by email, your details (e.g. name, email address, message content) are stored and used to process your request. The legal basis is Art. 6 (1) (b) GDPR (initiation/performance of a contract) or (f) GDPR (legitimate interest in responding to enquiries). The data is deleted as soon as it is no longer required and no statutory retention obligations apply.",
+      s6_h: "6. Linked social media profiles",
+      s6_p: "This website links to external social media profiles (e.g. Instagram, TikTok <span class=\"ph\">[add further channels]</span>). When you click on such a link, you are redirected to the respective provider's site. We have no influence on the data processing there; the privacy policy of the respective provider applies. [PLACEHOLDER: add providers and privacy links if applicable.]",
+      s7_h: "7. External fonts (Google Fonts)",
+      s7_p: "[PLACEHOLDER – please check: This website currently loads fonts via Google Fonts. This may establish a connection to Google's servers and transmit your IP address. If you want to avoid this, the fonts can be embedded locally. Please adapt to the actual technical implementation.]",
+      s8_h: "8. Your rights",
+      s8_p1: "Within the framework of the applicable legal provisions, you have the right at any time to:",
+      s8_list: "<li>information about your stored personal data (Art. 15 GDPR)</li><li>rectification of incorrect data (Art. 16 GDPR)</li><li>erasure (Art. 17 GDPR)</li><li>restriction of processing (Art. 18 GDPR)</li><li>data portability (Art. 20 GDPR)</li><li>objection to processing (Art. 21 GDPR)</li>",
+      s8_p2: "You also have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR). [PLACEHOLDER: add the competent supervisory authority if applicable.]",
+      s9_h: "9. SSL/TLS encryption",
+      s9_p: "For security reasons, this website uses SSL/TLS encryption. You can recognise an encrypted connection by the \"https://\" in your browser's address bar.",
+      note: "Note: This is a placeholder privacy policy as a scaffold. Please complete all details and have them legally reviewed before publishing.",
+      footer_rights: "All rights reserved."
+    };
+    const TITLES = { de: "Datenschutzerklärung – Lea", en: "Privacy Policy – Lea" };
+    const orig = new Map();
+    document.querySelectorAll('[data-i18n]').forEach(el => orig.set(el, el.innerHTML));
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        el.innerHTML = (lang === 'en' && EN[k] != null) ? EN[k] : orig.get(el);
+      });
+      document.title = TITLES[lang] || TITLES.de;
+      document.querySelectorAll('#langBtn .l-de').forEach(s => s.classList.toggle('active', lang === 'de'));
+      document.querySelectorAll('#langBtn .l-en').forEach(s => s.classList.toggle('active', lang === 'en'));
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+    }
+    let saved = null; try { saved = localStorage.getItem('lang'); } catch (e) {}
+    setLang(saved === 'en' ? 'en' : 'de');
+    document.getElementById('langBtn').addEventListener('click', () => {
+      setLang(document.documentElement.lang === 'de' ? 'en' : 'de');
+    });
+  </script>
 </body>
 </html>

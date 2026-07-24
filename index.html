@@ -17,39 +17,43 @@
   <header class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="brand">Lea</a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#ueber-mich">Über mich</a>
-        <a href="#inhalte">Inhalte</a>
-        <a href="#leistungen">Marken</a>
-        <a href="#ablauf">Ablauf</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+      <div class="nav-right">
+        <nav class="nav-links" id="navLinks">
+          <a href="#ueber-mich" data-i18n="nav_about">Über mich</a>
+          <a href="#inhalte" data-i18n="nav_content">Inhalte</a>
+          <a href="#leistungen" data-i18n="nav_brands">Marken</a>
+          <a href="#ablauf" data-i18n="nav_process">Ablauf</a>
+          <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
+        </nav>
+        <button class="lang-btn" id="langBtn" type="button" aria-label="Sprache wechseln / Switch language">
+          <span class="l-de">DE</span><span class="sep">/</span><span class="l-en">EN</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+      </div>
     </div>
   </header>
 
   <!-- ============ HERO ============ -->
   <section class="hero">
-    <!-- schwebende Sticker (Desktop) -->
-    <span class="sticker st-loc"><span class="dot">◍</span> Deutschland</span>
-    <span class="sticker st-tri">🏊‍♀️ 🚴‍♀️ 🏃‍♀️ Triathletin</span>
-    <span class="star-badge st-star"><span class="star-shape"></span><span class="star-text">1,6 Mio.<br />Aufrufe<br />/ 30 Tage</span></span>
+    <span class="sticker st-loc"><span class="dot">◍</span> <span data-i18n="loc">Deutschland</span></span>
+    <span class="sticker st-tri" data-i18n="hero_tri">🏊‍♀️ 🚴‍♀️ 🏃‍♀️ Triathletin</span>
+    <span class="star-badge st-star"><span class="star-shape"></span><span class="star-text" data-i18n="hero_star">1,6 Mio.<br />Aufrufe<br />/ 30 Tage</span></span>
 
     <div class="container hero-inner">
       <div class="tag-row reveal">
         <span class="dash"></span>
-        <span class="pill">Start</span>
-        <span class="cap">Triathletin × Läuferin × Creatorin</span>
+        <span class="pill" data-i18n="hero_pill">Start</span>
+        <span class="cap" data-i18n="hero_cap">Triathletin × Läuferin × Creatorin</span>
       </div>
       <h1 class="hero-name reveal"><span>Lea</span></h1>
-      <p class="hero-lead reveal">
+      <p class="hero-lead reveal" data-i18n="hero_lead">
         Mit drei Jahren stand ich das erste Mal auf dem Fußballplatz – heute gehört mein Herz dem
         Triathlon. Ich nehme meine Community mit auf dem Weg zu meinem <span class="hl">ersten Ironman&nbsp;70.3</span>:
         ehrlich, nahbar und immer mittendrin.
       </p>
       <div class="hero-actions reveal">
-        <a href="#kontakt" class="btn">Zusammenarbeiten <span class="arrow">→</span></a>
-        <a href="#ueber-mich" class="btn-outline btn">Mehr über mich <span class="arrow">↓</span></a>
+        <a href="#kontakt" class="btn" data-i18n="hero_cta1">Zusammenarbeiten <span class="arrow">→</span></a>
+        <a href="#ueber-mich" class="btn-outline btn" data-i18n="hero_cta2">Mehr über mich <span class="arrow">↓</span></a>
       </div>
       <div class="hero-photo reveal">
         <div class="img-ph">Hero-Foto von Lea<small>[Platzhalter: hochkant, ca. 1080×1350 px]</small></div>
@@ -60,7 +64,7 @@
 
   <!-- ============ MARQUEE ============ -->
   <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
+    <div class="marquee-track" data-i18n="marquee">
       <span>Schwimmen</span><span>Radfahren</span><span>Laufen</span><span>Sprintdistanz</span><span>Olympische Distanz</span><span>Ironman 70.3</span>
       <span>Schwimmen</span><span>Radfahren</span><span>Laufen</span><span>Sprintdistanz</span><span>Olympische Distanz</span><span>Ironman 70.3</span>
     </div>
@@ -73,17 +77,17 @@
       <div class="tag-row reveal">
         <span class="dash"></span>
         <span class="pill">Race Data</span>
-        <span class="cap">Letzte 30 Tage · Instagram Insights</span>
+        <span class="cap" data-i18n="stats_cap">Letzte 30 Tage · Instagram Insights</span>
       </div>
-      <h2 class="display reveal">Zahlen, die<br />Tempo machen</h2>
-      <p class="sub reveal">Stand: 22. Juni – 22. Juli 2026 · monatlich aktualisiert.</p>
-      <div class="stats-box reveal">
+      <h2 class="display reveal" data-i18n="stats_h2">Zahlen, die<br />Tempo machen</h2>
+      <p class="sub reveal" data-i18n="stats_sub">Stand: 22. Juni – 22. Juli 2026 · monatlich aktualisiert.</p>
+      <div class="stats-box reveal" data-i18n="stats_box">
         <div class="stat"><div class="num">1,6 Mio.</div><div class="label">Aufrufe (Reels)</div><span class="spill">83 Reels</span></div>
         <div class="stat"><div class="num">666.241</div><div class="label">Erreichte Konten</div><span class="spill">30 Tage</span></div>
         <div class="stat"><div class="num">35.703</div><div class="label">„Gefällt mir“</div><span class="spill">1.570 Kommentare</span></div>
         <div class="stat"><div class="num">4.750</div><div class="label">Follower</div><span class="spill">48,8 % Frauen</span></div>
       </div>
-      <p class="source reveal">Quelle: Instagram Insights (@lea.xjl), 22. Juni – 22. Juli 2026 · Werte werden monatlich aktualisiert.</p>
+      <p class="source reveal" data-i18n="stats_source">Quelle: Instagram Insights (@lea.xjl), 22. Juni – 22. Juli 2026 · Werte werden monatlich aktualisiert.</p>
     </div>
   </section>
 
@@ -93,19 +97,19 @@
       <div class="tag-row reveal">
         <span class="dash"></span>
         <span class="pill">Insights</span>
-        <span class="cap">Zielgruppe</span>
+        <span class="cap" data-i18n="aud_cap">Zielgruppe</span>
       </div>
-      <h2 class="display reveal" style="max-width:16ch; margin-bottom:50px;">Wer meine Inhalte sieht</h2>
+      <h2 class="display reveal" style="max-width:16ch; margin-bottom:50px;" data-i18n="aud_h2">Wer meine Inhalte sieht</h2>
       <div class="aud-grid">
         <div class="aud-left">
-          <div class="aud-block reveal">
+          <div class="aud-block reveal" data-i18n="aud_gender">
             <h3>Geschlecht</h3>
             <div class="gender">
               <div class="g"><span class="pct">48,8 %</span><span class="gl"><i class="dw"></i> Frauen</span></div>
               <div class="g"><span class="pct">51,2 %</span><span class="gl"><i class="dm"></i> Männer</span></div>
             </div>
           </div>
-          <div class="aud-block reveal">
+          <div class="aud-block reveal" data-i18n="aud_countries">
             <h3>Top-Länder</h3>
             <ul class="country-list">
               <li><span>🇩🇪 Deutschland</span><strong>47,6 %</strong></li>
@@ -116,7 +120,7 @@
             </ul>
           </div>
         </div>
-        <div class="aud-block reveal">
+        <div class="aud-block reveal" data-i18n="aud_age">
           <h3>Altersgruppen</h3>
           <div class="bar-row"><span class="age">13–17</span><span class="bar"><span style="width:19.7%"></span></span><b>6,3 %</b></div>
           <div class="bar-row"><span class="age">18–24</span><span class="bar"><span style="width:92.5%"></span></span><b>29,6 %</b></div>
@@ -137,20 +141,20 @@
       <div class="about-text reveal">
         <div class="tag-row">
           <span class="dash"></span>
-          <span class="pill">Etappe 01 · Schwimmen</span>
-          <span class="cap">Über mich</span>
+          <span class="pill" data-i18n="about_pill">Etappe 01 · Schwimmen</span>
+          <span class="cap" data-i18n="about_cap">Über mich</span>
         </div>
-        <h2 class="display">Die Athletin<br />hinter der <span class="accent">Kamera</span></h2>
-        <p>
+        <h2 class="display" data-i18n="about_h2">Die Athletin<br />hinter der <span class="accent">Kamera</span></h2>
+        <p data-i18n="about_p1">
           Ich bin Lea – <span class="hl">Triathlon-Anfängerin</span>. Ich spiele Fußball, seit ich drei Jahre alt bin.
           Heute stecke ich meine ganze Energie in eine neue Leidenschaft: den Triathlon.
         </p>
-        <p>
+        <p data-i18n="about_p2">
           Im September starte ich bei meiner <span class="hl">ersten Sprintdistanz</span>, im Oktober läuft es weiter
           beim München Halbmarathon. Nächstes Jahr will ich meinen ersten Ironman&nbsp;70.3 finishen und träume vom
           BMW Berlin Marathon.
         </p>
-        <p>
+        <p data-i18n="about_p3">
           Nebenbei bin ich duale Studentin – und langfristig möchte ich in diesem Sport
           <span class="hl alt">richtig gut werden</span>. Meine Community ist immer mit dabei: ehrlich und nahbar.
         </p>
@@ -158,7 +162,7 @@
       <div class="reveal">
         <div class="polaroid">
           <div class="img-ph">Foto „Über mich"<small>[Platzhalter: Portrait / Trainingsfoto, hochkant]</small></div>
-          <div class="ph-cap">Mein Weg zum ersten Triathlon</div>
+          <div class="ph-cap" data-i18n="about_cap2">Mein Weg zum ersten Triathlon</div>
         </div>
       </div>
     </div>
@@ -169,25 +173,25 @@
     <div class="container">
       <div class="tag-row reveal">
         <span class="dash"></span>
-        <span class="pill">Etappe 02 · Radfahren</span>
-        <span class="cap">Content-Schwerpunkte</span>
+        <span class="pill" data-i18n="pillars_pill">Etappe 02 · Radfahren</span>
+        <span class="cap" data-i18n="pillars_cap">Content-Schwerpunkte</span>
       </div>
-      <h2 class="display reveal" style="max-width:15ch;">Worüber ich Content mache</h2>
+      <h2 class="display reveal" style="max-width:15ch;" data-i18n="pillars_h2">Worüber ich Content mache</h2>
       <div class="pillars">
         <div class="pillar reveal">
           <div class="p-num">01</div>
-          <h3>Training &amp;<br />Wettkampf</h3>
-          <p>Ich zeige meinen Trainingsalltag ungeschönt: die frühen Einheiten, die Fortschritte, die Rückschläge und die Vorbereitung auf jeden Wettkampf. Wer dranbleibt, erlebt meinen Weg von der ersten Einheit bis zur Ziellinie.</p>
+          <h3 data-i18n="pillar1_h3">Training &amp;<br />Wettkampf</h3>
+          <p data-i18n="pillar1_p">Ich zeige meinen Trainingsalltag ungeschönt: die frühen Einheiten, die Fortschritte, die Rückschläge und die Vorbereitung auf jeden Wettkampf. Wer dranbleibt, erlebt meinen Weg von der ersten Einheit bis zur Ziellinie.</p>
         </div>
         <div class="pillar reveal">
           <div class="p-num">02</div>
-          <h3>Ästhetische<br />Sportfotografie</h3>
-          <p>Sport darf schön aussehen. Ich fange Bewegung, Licht und Momente in hochwertigen, ästhetischen Bildern ein – Content, der im Feed auffällt und hängen bleibt.</p>
+          <h3 data-i18n="pillar2_h3">Ästhetische<br />Sportfotografie</h3>
+          <p data-i18n="pillar2_p">Sport darf schön aussehen. Ich fange Bewegung, Licht und Momente in hochwertigen, ästhetischen Bildern ein – Content, der im Feed auffällt und hängen bleibt.</p>
         </div>
         <div class="pillar reveal">
           <div class="p-num">03</div>
-          <h3>Community-<br />Einblicke</h3>
-          <p>Meine Community ist immer dabei. Ich teile Motivation, ehrliche Gedanken und die Momente hinter den Kulissen – nahbar und authentisch statt perfekt inszeniert.</p>
+          <h3 data-i18n="pillar3_h3">Community-<br />Einblicke</h3>
+          <p data-i18n="pillar3_p">Meine Community ist immer dabei. Ich teile Motivation, ehrliche Gedanken und die Momente hinter den Kulissen – nahbar und authentisch statt perfekt inszeniert.</p>
         </div>
       </div>
     </div>
@@ -198,14 +202,14 @@
     <div class="container">
       <div class="tag-row reveal">
         <span class="dash"></span>
-        <span class="pill">Etappe 03 · Laufen</span>
+        <span class="pill" data-i18n="inhalte_pill">Etappe 03 · Laufen</span>
         <span class="cap">Portfolio</span>
       </div>
-      <h2 class="display reveal" style="max-width:16ch; margin-bottom:44px;">Beispiele meiner Inhalte</h2>
+      <h2 class="display reveal" style="max-width:16ch; margin-bottom:44px;" data-i18n="inhalte_h2">Beispiele meiner Inhalte</h2>
       <div class="gallery">
         <div class="item g1 reveal"><div class="img-ph">Inhalt 1<small>[Reel]</small></div><span class="cap">Reel</span></div>
         <div class="item g2 reveal"><div class="img-ph">Inhalt 2<small>[Foto-Serie]</small></div><span class="cap">Post</span></div>
-        <div class="item g3 reveal"><div class="img-ph">Inhalt 3<small>[Kooperation]</small></div><span class="cap">Kooperation</span></div>
+        <div class="item g3 reveal"><div class="img-ph">Inhalt 3<small>[Kooperation]</small></div><span class="cap" data-i18n="cap_collab">Kooperation</span></div>
         <div class="item g4 reveal"><div class="img-ph">Inhalt 4<small>[Trainingsvlog]</small></div><span class="cap">Video</span></div>
         <div class="item g5 reveal"><div class="img-ph">Inhalt 5<small>[Wettkampf]</small></div><span class="cap">Story</span></div>
       </div>
@@ -217,60 +221,55 @@
     <div class="container">
       <div class="tag-row reveal">
         <span class="dash"></span>
-        <span class="pill">Ziellinie</span>
-        <span class="cap">Für Unternehmen &amp; Marken</span>
+        <span class="pill" data-i18n="leist_pill">Ziellinie</span>
+        <span class="cap" data-i18n="leist_cap">Für Unternehmen &amp; Marken</span>
       </div>
-      <h2 class="display reveal" style="max-width:14ch;">Wähl deine Distanz</h2>
+      <h2 class="display reveal" style="max-width:14ch;" data-i18n="leist_h2">Wähl deine Distanz</h2>
       <div class="packages">
         <div class="package reveal">
           <div class="tier">Sprint Distance</div>
-          <div class="price">auf Anfrage<small> · Einstieg</small></div>
-          <ul>
-            <li>1 Instagram-Reel (bis 30 Sek., selbst gedreht &amp; geschnitten)</li>
-            <li>3 Story-Frames mit Verlinkung</li>
-            <li>Individuelle Caption &amp; Hashtags</li>
-            <li>Markennennung &amp; Verlinkung</li>
+          <div class="price" data-i18n="price_entry">auf Anfrage<small> · Einstieg</small></div>
+          <ul data-i18n="sprint_list">
+            <li>1 Feed-Post</li>
+            <li>2 Stories</li>
+            <li>Custom Caption &amp; Hashtags</li>
+            <li>Brand Mention &amp; Tag</li>
           </ul>
-          <a href="#kontakt" class="btn btn-outline">Anfragen <span class="arrow">→</span></a>
+          <a href="#kontakt" class="btn btn-outline" data-i18n="btn_request">Anfragen <span class="arrow">→</span></a>
         </div>
         <div class="package featured reveal">
-          <span class="badge-top">★ Am beliebtesten</span>
+          <span class="badge-top" data-i18n="badge_popular">★ Am beliebtesten</span>
           <div class="tier">Olympic Distance</div>
-          <div class="price">auf Anfrage<small> · ausgewogen</small></div>
-          <ul>
-            <li>2 Instagram-Reels (bis 45 Sek.)</li>
-            <li>1 Feed-Post (Foto + Caption)</li>
-            <li>3–5 Story-Frames mit Verlinkung</li>
-            <li>Ästhetisches Foto-Paket zur Weiterverwendung</li>
-            <li>Erweiterte Nutzungsrechte nach Absprache</li>
+          <div class="price" data-i18n="price_balanced">auf Anfrage<small> · ausgewogen</small></div>
+          <ul data-i18n="olympic_list">
+            <li>1 Reel (30–60 Sek.)</li>
+            <li>3 Stories</li>
+            <li>Caption &amp; Hashtags</li>
           </ul>
-          <a href="#kontakt" class="btn">Anfragen <span class="arrow">→</span></a>
+          <a href="#kontakt" class="btn" data-i18n="btn_request2">Anfragen <span class="arrow">→</span></a>
         </div>
         <div class="package reveal">
           <div class="tier">Ironman</div>
-          <div class="price">auf Anfrage<small> · Partnerschaft</small></div>
-          <ul>
-            <li>Langfristige Zusammenarbeit über mehrere Monate</li>
-            <li>Mehrere Reels &amp; Posts pro Monat</li>
-            <li>Begleitung von Events &amp; Wettkämpfen</li>
-            <li>Rolle als Marken-Botschafterin</li>
-            <li>Individuelle Nutzungsrechte &amp; Konditionen</li>
+          <div class="price" data-i18n="price_partner">auf Anfrage<small> · Partnerschaft</small></div>
+          <ul data-i18n="ironman_list">
+            <li>2 Posts oder Reels pro Monat</li>
+            <li>3 Stories</li>
           </ul>
-          <a href="#kontakt" class="btn btn-outline">Botschaft anfragen <span class="arrow">→</span></a>
+          <a href="#kontakt" class="btn btn-outline" data-i18n="btn_request3">Anfragen <span class="arrow">→</span></a>
         </div>
       </div>
 
       <!-- Einzel-Formate -->
       <div class="formats reveal">
-        <h3>Einzelne Formate</h3>
-        <p class="intro">Preise auf Anfrage – jede Kooperation wird individuell abgestimmt. <a href="#kontakt">Kontakt aufnehmen →</a></p>
+        <h3 data-i18n="formats_h3">Einzelne Formate</h3>
+        <p class="intro" data-i18n="formats_intro">Preise auf Anfrage – jede Kooperation wird individuell abgestimmt. <a href="#kontakt">Kontakt aufnehmen →</a></p>
         <table class="ftable">
-          <thead><tr><th>Format</th><th>Leistung</th></tr></thead>
-          <tbody>
-            <tr><td>Story-Paket</td><td>3–5 Story-Frames mit Markennennung &amp; Verlinkung</td></tr>
-            <tr><td>Feed-Post</td><td>1 Feed-Beitrag (Foto + individuelle Caption)</td></tr>
-            <tr><td>Reel</td><td>1 produziertes Reel, selbst gedreht &amp; geschnitten</td></tr>
-            <tr><td>Foto-Paket</td><td>Set ästhetischer Fotos zur freien Nutzung</td></tr>
+          <thead><tr><th data-i18n="th_format">Format</th><th data-i18n="th_deliverable">Leistung</th></tr></thead>
+          <tbody data-i18n="formats_rows">
+            <tr><td>Story-Paket</td><td>4 Stories mit Nennung</td></tr>
+            <tr><td>Feed-Post</td><td>1 Foto mit Caption, Hashtags &amp; Verlinkung</td></tr>
+            <tr><td>Reel</td><td>15–30 Sek. Video mit Caption</td></tr>
+            <tr><td>Race Coverage</td><td>Wettkampf-Begleitung mit Story, Reel oder Post</td></tr>
           </tbody>
         </table>
       </div>
@@ -282,15 +281,15 @@
     <div class="container">
       <div class="tag-row reveal">
         <span class="dash"></span>
-        <span class="pill">Der Weg</span>
-        <span class="cap">Ablauf</span>
+        <span class="pill" data-i18n="ablauf_pill">Der Weg</span>
+        <span class="cap" data-i18n="ablauf_cap">Ablauf</span>
       </div>
-      <h2 class="display reveal" style="max-width:16ch; margin-bottom:20px;">So läuft eine Zusammenarbeit</h2>
+      <h2 class="display reveal" style="max-width:16ch; margin-bottom:20px;" data-i18n="ablauf_h2">So läuft eine Zusammenarbeit</h2>
       <div class="process">
-        <div class="step reveal"><div class="s-num">01</div><h3>Kennenlernen</h3><p>Du schreibst mir per E-Mail. Wir klären, was du dir vorstellst, welche Ziele die Marke hat und ob wir zusammenpassen.</p></div>
-        <div class="step reveal"><div class="s-num">02</div><h3>Konzept</h3><p>Ich entwickle eine Idee, die zu dir und meiner Community passt – inklusive Formaten, Timing und einem transparenten Angebot.</p></div>
-        <div class="step reveal"><div class="s-num">03</div><h3>Umsetzung</h3><p>Ich produziere die Inhalte selbst: Planung, Dreh, Fotografie und Schnitt – alles aus einer Hand.</p></div>
-        <div class="step reveal"><div class="s-num">04</div><h3>Veröffentlichung</h3><p>Du bekommst die Inhalte zur Freigabe. Nach dem Posting teile ich die wichtigsten Zahlen aus den Insights mit dir.</p></div>
+        <div class="step reveal"><div class="s-num">01</div><h3 data-i18n="step1_h3">Kennenlernen</h3><p data-i18n="step1_p">Du schreibst mir per E-Mail. Wir klären, was du dir vorstellst, welche Ziele die Marke hat und ob wir zusammenpassen.</p></div>
+        <div class="step reveal"><div class="s-num">02</div><h3 data-i18n="step2_h3">Konzept</h3><p data-i18n="step2_p">Ich entwickle eine Idee, die zu dir und meiner Community passt – inklusive Formaten, Timing und einem transparenten Angebot.</p></div>
+        <div class="step reveal"><div class="s-num">03</div><h3 data-i18n="step3_h3">Umsetzung</h3><p data-i18n="step3_p">Ich produziere die Inhalte selbst: Planung, Dreh, Fotografie und Schnitt – alles aus einer Hand.</p></div>
+        <div class="step reveal"><div class="s-num">04</div><h3 data-i18n="step4_h3">Veröffentlichung</h3><p data-i18n="step4_p">Du bekommst die Inhalte zur Freigabe. Nach dem Posting teile ich die wichtigsten Zahlen aus den Insights mit dir.</p></div>
       </div>
     </div>
   </section>
@@ -301,12 +300,12 @@
       <div class="tag-row reveal">
         <span class="dash"></span>
         <span class="pill">Finish</span>
-        <span class="cap">Kontakt</span>
+        <span class="cap" data-i18n="kontakt_cap">Kontakt</span>
       </div>
-      <h2 class="contact-big reveal">Lass uns was<br /><span class="accent">bewegen</span></h2>
-      <p class="sub reveal">Standort Deutschland · offen für Kooperationen, Marken-Partnerschaften und neue Herausforderungen.</p>
+      <h2 class="contact-big reveal" data-i18n="kontakt_big">Lass uns was<br /><span class="accent">bewegen</span></h2>
+      <p class="sub reveal" data-i18n="kontakt_sub">Standort Deutschland · offen für Kooperationen, Marken-Partnerschaften und neue Herausforderungen.</p>
       <a href="mailto:lea.loc@gmx.de" class="contact-email reveal">lea.loc@gmx.de <span class="arrow">→</span></a>
-      <p class="contact-dm reveal">oder schreib mir → <a href="https://instagram.com/lea.xjl" target="_blank" rel="noopener">@lea.xjl</a></p>
+      <p class="contact-dm reveal" data-i18n="kontakt_dm">oder schreib mir → <a href="https://instagram.com/lea.xjl" target="_blank" rel="noopener">@lea.xjl</a></p>
     </div>
   </section>
 
@@ -317,15 +316,15 @@
       <div class="footer-cols">
         <div>
           <div class="brand" style="box-shadow:none;">Lea</div>
-          <p class="footer-tag" style="margin-top:14px;">Triathletin &amp; Content Creatorin aus Deutschland – auf dem Weg zum ersten Ironman 70.3.</p>
+          <p class="footer-tag" style="margin-top:14px;" data-i18n="footer_tag">Triathletin &amp; Content Creatorin aus Deutschland – auf dem Weg zum ersten Ironman 70.3.</p>
         </div>
         <div class="footer-nav">
           <div>
-            <h4>Seite</h4>
-            <a href="#ueber-mich">Über mich</a>
-            <a href="#leistungen">Für Marken</a>
-            <a href="#inhalte">Inhalte</a>
-            <a href="#kontakt">Kontakt</a>
+            <h4 data-i18n="footer_menu">Seite</h4>
+            <a href="#ueber-mich" data-i18n="nav_about">Über mich</a>
+            <a href="#leistungen" data-i18n="nav_brands">Für Marken</a>
+            <a href="#inhalte" data-i18n="nav_content">Inhalte</a>
+            <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
           </div>
           <div>
             <h4>Social</h4>
@@ -340,21 +339,113 @@
           <a href="impressum.html">Impressum</a>
           <a href="datenschutz.html">Datenschutz</a>
         </div>
-        <small>© <span id="year">2026</span> Lea. Alle Rechte vorbehalten.</small>
+        <small>© <span id="year">2026</span> Lea. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></small>
       </div>
     </div>
   </footer>
 
   <script>
+    // Mobile-Menü
     const toggle = document.getElementById('navToggle');
     const links = document.getElementById('navLinks');
     toggle.addEventListener('click', () => links.classList.toggle('open'));
     links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+    // Jahr
     document.getElementById('year').textContent = new Date().getFullYear();
+    // Scroll-Reveal (ohne externe Libs / Tracking)
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
     }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // ---------- Sprachumschalter DE / EN (rein clientseitig, kein Tracking) ----------
+    const EN = {
+      nav_about: "About", nav_content: "Content", nav_brands: "Brands", nav_process: "Process", nav_contact: "Contact",
+      loc: "Germany",
+      hero_tri: "🏊‍♀️ 🚴‍♀️ 🏃‍♀️ Triathlete",
+      hero_star: "1.6M<br />views<br />/ 30 days",
+      hero_pill: "Start",
+      hero_cap: "Triathlete × Runner × Creator",
+      hero_lead: "At three years old I first stepped onto a football pitch – today my heart belongs to triathlon. I take my community along on the road to my <span class=\"hl\">first Ironman&nbsp;70.3</span>: honest, close and always right in the middle.",
+      hero_cta1: "Work with me <span class=\"arrow\">→</span>",
+      hero_cta2: "More about me <span class=\"arrow\">↓</span>",
+      marquee: "<span>Swim</span><span>Bike</span><span>Run</span><span>Sprint distance</span><span>Olympic distance</span><span>Ironman 70.3</span><span>Swim</span><span>Bike</span><span>Run</span><span>Sprint distance</span><span>Olympic distance</span><span>Ironman 70.3</span>",
+      stats_cap: "Last 30 days · Instagram Insights",
+      stats_h2: "Numbers that<br />sprint",
+      stats_sub: "As of 22 June – 22 July 2026 · updated monthly.",
+      stats_box: "<div class=\"stat\"><div class=\"num\">1.6M</div><div class=\"label\">Views (Reels)</div><span class=\"spill\">83 reels</span></div><div class=\"stat\"><div class=\"num\">666,241</div><div class=\"label\">Accounts reached</div><span class=\"spill\">30 days</span></div><div class=\"stat\"><div class=\"num\">35,703</div><div class=\"label\">Likes</div><span class=\"spill\">1,570 comments</span></div><div class=\"stat\"><div class=\"num\">4,750</div><div class=\"label\">Followers</div><span class=\"spill\">48.8% women</span></div>",
+      stats_source: "Source: Instagram Insights (@lea.xjl), 22 June – 22 July 2026 · figures updated monthly.",
+      aud_cap: "Audience",
+      aud_h2: "Who sees my content",
+      aud_gender: "<h3>Gender</h3><div class=\"gender\"><div class=\"g\"><span class=\"pct\">48.8%</span><span class=\"gl\"><i class=\"dw\"></i> Women</span></div><div class=\"g\"><span class=\"pct\">51.2%</span><span class=\"gl\"><i class=\"dm\"></i> Men</span></div></div>",
+      aud_countries: "<h3>Top countries</h3><ul class=\"country-list\"><li><span>🇩🇪 Germany</span><strong>47.6%</strong></li><li><span>🇺🇸 USA</span><strong>11.9%</strong></li><li><span>🇬🇧 United Kingdom</span><strong>7.6%</strong></li><li><span>🇦🇹 Austria</span><strong>3.5%</strong></li><li><span>🇨🇭 Switzerland</span><strong>3.3%</strong></li></ul>",
+      aud_age: "<h3>Age groups</h3><div class=\"bar-row\"><span class=\"age\">13–17</span><span class=\"bar\"><span style=\"width:19.7%\"></span></span><b>6.3%</b></div><div class=\"bar-row\"><span class=\"age\">18–24</span><span class=\"bar\"><span style=\"width:92.5%\"></span></span><b>29.6%</b></div><div class=\"bar-row\"><span class=\"age\">25–34</span><span class=\"bar\"><span style=\"width:100%\"></span></span><b>32.0%</b></div><div class=\"bar-row\"><span class=\"age\">35–44</span><span class=\"bar\"><span style=\"width:50.9%\"></span></span><b>16.3%</b></div><div class=\"bar-row\"><span class=\"age\">45–54</span><span class=\"bar\"><span style=\"width:30.6%\"></span></span><b>9.8%</b></div><div class=\"bar-row\"><span class=\"age\">55–64</span><span class=\"bar\"><span style=\"width:14.4%\"></span></span><b>4.6%</b></div><div class=\"bar-row\"><span class=\"age\">65+</span><span class=\"bar\"><span style=\"width:4.4%\"></span></span><b>1.4%</b></div>",
+      about_pill: "Leg 01 · Swim", about_cap: "About me",
+      about_h2: "The athlete<br />behind the <span class=\"accent\">camera</span>",
+      about_p1: "I'm Lea – <span class=\"hl\">a triathlon beginner</span>. I've played football since I was three years old. Today I put all my energy into a new passion: triathlon.",
+      about_p2: "In September I line up for my <span class=\"hl\">first sprint distance</span>, in October it continues with the Munich Half Marathon. Next year I want to finish my first Ironman&nbsp;70.3 and dream of the BMW Berlin Marathon.",
+      about_p3: "On the side I'm a work-study student – and long term I want to get <span class=\"hl alt\">really good</span> at this sport. My community is always along for the ride: honest and close.",
+      about_cap2: "My road to the first triathlon",
+      pillars_pill: "Leg 02 · Bike", pillars_cap: "Content focus",
+      pillars_h2: "What I create content about",
+      pillar1_h3: "Training &amp;<br />racing",
+      pillar1_p: "I show my training routine unfiltered: the early sessions, the progress, the setbacks and the build-up to every race. Stick around and you'll follow my journey from the first session to the finish line.",
+      pillar2_h3: "Sports<br />photography",
+      pillar2_p: "Sport is allowed to look good. I capture movement, light and moments in high-quality images – content that stands out in the feed and sticks.",
+      pillar3_h3: "Community<br />insights",
+      pillar3_p: "My community is always there. I share motivation, honest thoughts and the behind-the-scenes moments – close and authentic instead of perfectly staged.",
+      inhalte_pill: "Leg 03 · Run",
+      inhalte_h2: "Examples of my content",
+      cap_collab: "Collab",
+      leist_pill: "Finish line", leist_cap: "For companies &amp; brands",
+      leist_h2: "Pick your distance",
+      price_entry: "on request<small> · entry</small>",
+      price_balanced: "on request<small> · balanced</small>",
+      price_partner: "on request<small> · partnership</small>",
+      badge_popular: "★ Most popular",
+      sprint_list: "<li>1 feed post</li><li>2 stories</li><li>Custom caption &amp; hashtags</li><li>Brand mention &amp; tag</li>",
+      olympic_list: "<li>1 reel (30–60 sec.)</li><li>3 stories</li><li>Caption &amp; hashtags</li>",
+      ironman_list: "<li>2 posts or reels per month</li><li>3 stories</li>",
+      btn_request: "Request <span class=\"arrow\">→</span>",
+      btn_request2: "Request <span class=\"arrow\">→</span>",
+      btn_request3: "Request <span class=\"arrow\">→</span>",
+      formats_h3: "Individual formats",
+      formats_intro: "Prices on request – every collaboration is scoped individually. <a href=\"#kontakt\">Get in touch →</a>",
+      th_format: "Format", th_deliverable: "Deliverable",
+      formats_rows: "<tr><td>Story pack</td><td>4 stories with mention</td></tr><tr><td>Feed post</td><td>1 photo with caption, hashtags &amp; tag</td></tr><tr><td>Reel</td><td>15–30 sec. video with caption</td></tr><tr><td>Race coverage</td><td>Race-day coverage with story, reel or post</td></tr>",
+      ablauf_pill: "The route", ablauf_cap: "Process",
+      ablauf_h2: "How a collaboration works",
+      step1_h3: "Getting to know", step1_p: "You email me. We clarify what you have in mind, the brand's goals and whether we're a good fit.",
+      step2_h3: "Concept", step2_p: "I develop an idea that fits you and my community – including formats, timing and a transparent offer.",
+      step3_h3: "Production", step3_p: "I produce the content myself: planning, filming, photography and editing – all from one hand.",
+      step4_h3: "Publishing", step4_p: "You get the content for approval. After posting I share the key figures from the insights with you.",
+      kontakt_cap: "Contact",
+      kontakt_big: "Let's make it<br /><span class=\"accent\">move</span>",
+      kontakt_sub: "Based in Germany · open to collaborations, brand partnerships and new challenges.",
+      kontakt_dm: "or message me → <a href=\"https://instagram.com/lea.xjl\" target=\"_blank\" rel=\"noopener\">@lea.xjl</a>",
+      footer_tag: "Triathlete &amp; content creator from Germany – on the road to her first Ironman 70.3.",
+      footer_menu: "Menu",
+      footer_rights: "All rights reserved."
+    };
+    const TITLES = { de: "Lea – Triathletin & Content Creatorin", en: "Lea – Triathlete & Content Creator" };
+    const orig = new Map();
+    document.querySelectorAll('[data-i18n]').forEach(el => orig.set(el, el.innerHTML));
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        el.innerHTML = (lang === 'en' && EN[k] != null) ? EN[k] : orig.get(el);
+      });
+      document.title = TITLES[lang] || TITLES.de;
+      document.querySelectorAll('#langBtn .l-de').forEach(s => s.classList.toggle('active', lang === 'de'));
+      document.querySelectorAll('#langBtn .l-en').forEach(s => s.classList.toggle('active', lang === 'en'));
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+    }
+    let saved = null; try { saved = localStorage.getItem('lang'); } catch (e) {}
+    setLang(saved === 'en' ? 'en' : 'de');
+    document.getElementById('langBtn').addEventListener('click', () => {
+      setLang(document.documentElement.lang === 'de' ? 'en' : 'de');
+    });
   </script>
 </body>
 </html>
