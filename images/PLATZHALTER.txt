@@ -1,9 +1,13 @@
-Hier kommen deine Bilder rein.
+Bitte lade deine Fotos GENAU mit diesen Dateinamen in diesen Ordner (images/) hoch.
+Dann erscheinen sie automatisch an der richtigen Stelle auf der Website:
 
-Empfohlene Platzhalter, die du später ersetzt:
-- hero.jpg          (Hero-Foto, hochkant, ca. 1080x1350 px)
-- ueber-mich.jpg    (Portrait / Trainingsfoto, hochkant)
-- inhalt-1.jpg ... inhalt-6.jpg   (Galerie „Beispiele meiner Inhalte")
+  ueber-mich.jpg   -> Polaroid im Bereich "Über mich"  (dein "hey, ich bin Lea"-Bild)
+  schwimmen.jpg    -> Galerie, Kachel "Schwimmen"
+  radfahren.jpg    -> Galerie, Kachel "Radfahren"
+  laufen.jpg       -> Galerie, Kachel "Laufen"  UND  großes Hero-Foto oben
 
-Sobald die Bilder da sind, in index.html die <div class="img-ph">-Platzhalter
-durch <img src="images/hero.jpg" alt="..."> ersetzen.
+Wichtig:
+- Dateiendung .jpg (Kleinbuchstaben). Wenn deine Bilder .png oder .jpeg sind,
+  entweder umbenennen oder mir Bescheid geben, dann passe ich die Links an.
+- Format: am besten Hochformat.
+- Nach dem Hochladen wird die Datei PLATZHALTER.txt hier nicht mehr benötigt.
