@@ -156,9 +156,12 @@ h1, h2, h3 { line-height: .98; font-weight: 900; letter-spacing: -.02em; }
 .hl.alt { background: var(--accent); }
 .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 46px; }
 /* Positionen der Sticker */
-.st-loc  { top: 130px; left: 2%; }
-.st-tri  { top: 200px; right: 3%; }
-.st-star { top: 360px; left: 4%; transform: rotate(-12deg); }
+.st-loc   { top: 130px; left: 2%; }
+.st-tri   { top: 200px; right: 3%; }
+.st-star  { top: 360px; left: 4%; transform: rotate(-12deg); }
+.star-badge.sm { width: 132px; height: 132px; }
+.st-star2 { top: 320px; right: 4%; transform: rotate(9deg); }
+.st-star3 { top: 600px; left: 8%; transform: rotate(-7deg); }
 /* Hero-Foto (Polaroid, immer sichtbar) */
 .hero-photo {
   max-width: 340px; margin: 0 auto; background: var(--paper);
