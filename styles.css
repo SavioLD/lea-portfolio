@@ -227,7 +227,7 @@ h1, h2, h3 { line-height: .98; font-weight: 900; letter-spacing: -.02em; }
 
 /* -------------------- Galerie -------------------- */
 .gallery { display: grid; grid-template-columns: repeat(12,1fr); gap: 20px; }
-.gallery .item { border-radius: 18px; overflow: hidden; box-shadow: var(--shadow-sm); position: relative; aspect-ratio: 3/4; }
+.gallery .item { border-radius: 18px; overflow: hidden; box-shadow: var(--shadow-sm); position: relative; aspect-ratio: 3/4; grid-column: span 3; }
 .gallery .item .img-ph { border-radius: 0; height: 100%; }
 .gallery .item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .gallery .cap { position: absolute; left: 14px; bottom: 14px; background: var(--brand); color: var(--bg); padding: 7px 15px; border-radius: var(--r-pill); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; display: flex; align-items: center; gap: 7px; }
