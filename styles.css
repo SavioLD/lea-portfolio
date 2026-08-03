@@ -278,6 +278,16 @@ h1, h2, h3 { line-height: .98; font-weight: 900; letter-spacing: -.02em; }
 .ftable td { padding: 18px 0; border-bottom: 1.5px dashed var(--line); font-size: .96rem; vertical-align: top; }
 .ftable td:first-child { font-weight: 800; width: 40%; }
 
+/* -------------------- Wettkämpfe -------------------- */
+.races { border-top: 2px solid var(--brand); margin-top: 24px; }
+.race { display: grid; grid-template-columns: 140px 1fr auto; gap: 30px; align-items: baseline; padding: 34px 0; border-bottom: 1px solid var(--line); transition: padding .25s, background .25s; }
+.race:hover { background: var(--bg-2); padding-inline: 20px; border-radius: 18px; }
+.race-date { font-weight: 900; font-size: 1.1rem; color: var(--accent); letter-spacing: -.01em; }
+.race-main h3 { font-size: clamp(1.3rem, 2.5vw, 1.9rem); text-transform: uppercase; }
+.race-main p { color: var(--text); margin-top: 8px; max-width: 62ch; }
+.race-status { align-self: center; font-size: .68rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 8px 15px; border-radius: var(--r-pill); background: var(--red-100); color: var(--brand); white-space: nowrap; }
+.race-status.done { background: var(--brand); color: var(--bg); }
+
 /* -------------------- Ablauf -------------------- */
 .process { border-top: 2px solid var(--brand); margin-top: 10px; }
 .step { display: grid; grid-template-columns: 110px 1fr 1.3fr; gap: 30px; align-items: baseline; padding: 38px 0; border-bottom: 1px solid var(--line); transition: padding .25s, background .25s; }
@@ -355,6 +365,8 @@ h1, h2, h3 { line-height: .98; font-weight: 900; letter-spacing: -.02em; }
   .shares-grid { grid-template-columns: repeat(2, 1fr); }
   .pillar, .step { grid-template-columns: 60px 1fr; }
   .pillar p, .step p { grid-column: 1 / -1; }
+  .race { grid-template-columns: 1fr auto; }
+  .race-main { grid-column: 1 / -1; order: 3; }
   .aud-grid { grid-template-columns: 1fr; gap: 44px; }
   .sticker, .star-badge { display: none; }   /* Deko-Sticker auf Mobile aus */
   .nav-links { display: none; }
